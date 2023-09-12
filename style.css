@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Media queries for various contents on differnet screen size */
+@media screen and (max-width: 515px) {
+    h1{
+       text-align: center; 
+       font-weight: 700;
+    }
+
+    .description{
+        text-align: center; 
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-image: url(images/bg-intro-mobile.png);
+        background-color: hsl(0, 100%, 74%);
+        color: white;
+    }
+
+}
+
+@media (min-width: 515px){
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-image: url(images/bg-intro-desktop.png);
+        background-color: hsl(0, 100%, 74%);
+        color: white;
+    }
+
+    h1{
+        font-weight: 700;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* Basic CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* the entire size of an page to style */
+.container-fluid{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 80%;
+    width: 33rem;
+    margin: 0.8rem;
+}
+
+/* styles for the left side designs */
+.left{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+}
+
+/* styles for the right side designs */
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+
+.trial-info{
+    min-height: 10%;
+    max-width: 100%;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.forms{
+    background-color: white;
+    height: 85%;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 0.3rem;
+}
+
+.fields{
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited{
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    font-size: 1rem;
+}
+
+input::placeholder{
+    font-size: 1rem;
+}
