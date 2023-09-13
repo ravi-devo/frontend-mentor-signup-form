@@ -18,6 +18,23 @@
         color: white;
     }
 
+    .forms{
+        background-color: white;
+        height: 85%;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0.3rem;
+    }
+
+    .fields{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        overflow: scroll;
+    }
+
 }
 
 @media (min-width: 515px){
@@ -30,6 +47,22 @@
 
     h1{
         font-weight: 700;
+    }
+
+    .forms{
+        background-color: white;
+        height: 85%;
+        width: 100%;
+        padding: 2rem;
+        border-radius: 0.3rem;
+    }
+
+    .fields{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 }
 
@@ -93,22 +126,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-}
-
-.forms{
-    background-color: white;
-    height: 85%;
-    width: 100%;
-    padding: 2rem;
-    border-radius: 0.3rem;
-}
-
-.fields{
-    height: 95%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited{
